@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Todo</title>
+  </head>
+  <body>
+    <main>
+      <nav>
+        <h1>Todo</h1>
+        <button>Add Task</button>
+      </nav>
+      <div class="cols-container">
+        <div class="column" id="todo">
+          <div class="col-header">
+            <h2>To Do</h2>
+            <span class="taskCount">Tasks: 0</span>
+          </div>
+        </div>
+        <div class="column" id="progress">
+          <div class="col-header">
+            <h2>Progress</h2>
+            <span class="taskCount">Tasks: 0</span>
+          </div>
+        </div>
+        <div class="column" id="done">
+          <div class="col-header">
+            <h2>Done</h2>
+            <span class="taskCount">Tasks: 0</span>
+          </div>
+        </div>
+      </div>
+      <div class="modal hidden">
+        <div class="modal-content">
+          <span class="close-button">&times;</span>
+          <h2>Add New Task</h2>
+          <form id="task-form">
+            <label for="task-title">Title:</label>
+            <input
+              type="text"
+              id="task-title"
+              name="task-title"
+              class="task-title"
+              required
+            />
+            <label for="task-desc">Description:</label>
+            <textarea
+              id="task-desc"
+              name="task-desc"
+              required
+              class="task-desc"
+            ></textarea>
+            <button type="submit">Add Task</button>
+          </form>
+        </div>
+      </div>
+      <div class="marquee-container">
+        <div class="row">
+          <div class="marque">
+            <div class="card">
+              <h2>Title 1</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            </div>
+            <div class="card">
+              <h2>Title 2</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            </div>
+            <div class="card">
+              <h2>Title 3</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            </div>
+            <div class="card">
+              <h2>Title 1</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            </div>
+            <div class="card">
+              <h2>Title 2</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            </div>
+            <div class="card">
+              <h2>Title 3</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
